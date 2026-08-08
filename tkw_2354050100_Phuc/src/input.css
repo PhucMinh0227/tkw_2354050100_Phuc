@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *)); /* sẽ dùng ở buổi 3 */
+@theme {
+  /* Màu thương hiệu: Caribbean Green #1dd1a1 */
+  --color-brand-50: #ebfef7;
+  --color-brand-100: #cdfeea;
+  --color-brand-600: #00a380;
+  --color-brand-700: #00826a;
+  --color-brand-900: #005446;
+
+  /* Màu nhấn: Cinnabar #ff3838 */
+
+  --color-accent-300: #ff9d9d;
+  --color-accent-400: #ff6464;
+  --color-accent-500: #ff3838;
+
+  /* Màu chữ: */
+
+  --color-ink: #12211d;
+  --color-muted: #5c6f69;
+  --color-line: #dfe6e2;
+  --color-surface: #ffffff;
+  --font-display: "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Bo góc: */
+
+  --radius-card: 0.875rem;
+  --radis-pill: 999px;
+}
