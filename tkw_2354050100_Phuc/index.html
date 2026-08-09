@@ -8,12 +8,19 @@
       name="description"
       content="BOOKLY là nền tảng đọc ebook trực tuyến với kho sách phong phú và các gói thành viên linh hoạt."
     />
+    <link rel="stylesheet" href="/dist/output.css" />
   </head>
 
   <body>
+    <!-- Ảnh Figma dùng để đối chiếu -->
+    <img
+      src="assets/img/Cover.png"
+      alt=""
+      class="pointer-events-none fixed left-1/2 top-0 z-50 w-[1440px] max-w-none -translate-x-1/2 opacity-30"
+    />
     <!-- 1. NAVBAR -->
     <header>
-      <nav aria-label="Thanh điều hướng chính">
+      <nav aria-label="Thanh điều hướng chính" class="section">
         <a href="/" aria-label="BOOKLY - Trang chủ">
           <img src="images/bookly-logo.svg" alt="BOOKLY" />
         </a>
@@ -29,23 +36,39 @@
         </ul>
 
         <!-- Register link -->
-        <a href="#pricing"> Đăng ký ngay </a>
+        <a class="btn btn-primary" href="#pricing"> Đăng ký ngay </a>
       </nav>
     </header>
 
     <main id="main">
       <!-- 2. HERO -->
-      <section aria-labelledby="hero-title" id="hero">
-        <h1 id="hero-title">Kho sách trong tầm tay, đọc mọi lúc mọi nơi</h1>
-        <p>
-          Khám phá hàng nghìn ebook thuộc nhiều thể loại, đọc trực tuyến trên
-          mọi thiết bị với một gói thành viên phù hợp.
-        </p>
-        <a href="#pricing"> Khám phá các gói thành viên </a>
+      <section
+        aria-labelledby="hero-title"
+        id="hero"
+        class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
+      >
+        <!-- Cột trái  -->
+        <div>
+          <h1 id="hero-title">Kho sách trong tầm tay, đọc mọi lúc mọi nơi</h1>
+          <p>
+            Khám phá hàng nghìn ebook thuộc nhiều thể loại, đọc trực tuyến trên
+            mọi thiết bị với một gói thành viên phù hợp.
+          </p>
+          <a class="btn btn-primary" href="#pricing">
+            Khám phá các gói thành viên
+          </a>
+        </div>
+        <!-- Cột phải -->
+        <div>
+          <img
+            src="images/hero-image.png"
+            alt="Đọc sách ebook trực tuyến trên BOOKLY"
+          />
+        </div>
       </section>
 
       <!-- 3. CUSTOMER LOGOS (logo khách hàng)-->
-      <section aria-labelledby="customers-title" id="customers">
+      <section aria-labelledby="customers-title" id="customers" class="section">
         <h2 id="customers-title">Được tin dùng bởi các tổ chức</h2>
         <p>
           BOOKLY được các trường học, doanh nghiệp và thư viện lựa chọn để mang
@@ -64,7 +87,7 @@
       </section>
 
       <!-- 4. FEATURES (tính năng)-->
-      <section aria-labelledby="features-title" id="features">
+      <section aria-labelledby="features-title" id="features" class="section">
         <h2 id="features-title">Trải nghiệm đọc sách tiện lợi</h2>
         <p>
           BOOKLY mang đến trải nghiệm đọc ebook đơn giản, thuận tiện và phù hợp
@@ -107,7 +130,11 @@
       </section>
 
       <!-- 5. STATISTICS (số liệu thống kê) -->
-      <section aria-labelledby="statistics-title" id="statistics">
+      <section
+        aria-labelledby="statistics-title"
+        id="statistics"
+        class="section"
+      >
         <h2 id="statistics-title">BOOKLY trong những con số</h2>
 
         <ul>
@@ -134,7 +161,11 @@
       </section>
 
       <!-- 6. TESTIMONIALS (cảm nhận/đánh giá)-->
-      <section aria-labelledby="testimonials-title" id="testimonials">
+      <section
+        aria-labelledby="testimonials-title"
+        id="testimonials"
+        class="section"
+      >
         <h2 id="testimonials-title">Độc giả nói gì về BOOKLY</h2>
 
         <ul>
@@ -171,7 +202,7 @@
       </section>
 
       <!-- 7. PRICING (bảng giá)-->
-      <section aria-labelledby="pricing-title" id="pricing">
+      <section aria-labelledby="pricing-title" id="pricing" class="section">
         <h2 id="pricing-title">Chọn gói thành viên phù hợp</h2>
 
         <p>
@@ -219,7 +250,7 @@
       </section>
 
       <!-- 8. FAQ (câu hỏi thường gặp)-->
-      <section aria-labelledby="faq-title" id="faq">
+      <section aria-labelledby="faq-title" id="faq" class="section">
         <h2 id="faq-title">Câu hỏi thường gặp</h2>
 
         <details>
@@ -253,7 +284,11 @@
       </section>
 
       <!-- 9. CTA -->
-      <section aria-labelledby="subscription-title" id="subscription">
+      <section
+        aria-labelledby="subscription-title"
+        id="subscription"
+        class="section"
+      >
         <h2 id="subscription-title">Bắt đầu hành trình đọc sách của bạn</h2>
         <p>
           Khám phá kho ebook phong phú và tìm những cuốn sách phù hợp với sở
@@ -265,7 +300,7 @@
 
     <!-- 10. FOOTER -->
     <footer>
-      <section aria-labelledby="contact-title">
+      <section aria-labelledby="contact-title" class="section">
         <h2 id="contact-title">Liên hệ với BOOKLY</h2>
         <address>
           <p>272 Nguyễn Ảnh Thủ, Hóc Môn, Thành phố Hồ Chí Minh</p>
