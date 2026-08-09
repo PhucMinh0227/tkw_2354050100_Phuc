@@ -16,27 +16,95 @@
     <img
       src="assets/img/Cover.png"
       alt=""
-      class="pointer-events-none fixed left-1/2 top-0 z-50 w-[1440px] max-w-none -translate-x-1/2 opacity-30"
+      class="pointer-events-none fixed left-1/2 top-0 z-50 w-[1440px] max-w-none -translate-x-1/2 opacity-30 hidden"
     />
-    <!-- 1. NAVBAR -->
-    <header>
-      <nav aria-label="Thanh điều hướng chính" class="section">
-        <a href="/" aria-label="BOOKLY - Trang chủ">
-          <img src="images/bookly-logo.svg" alt="BOOKLY" />
+    <!-- 1. NAV BAR -->
+    <header class="bg-surface">
+      <nav
+        aria-label="Thanh điều hướng chính"
+        class="mx-auto flex h-[85px] w-full max-w-[1280px] items-center gap-8 px-0 py-6"
+      >
+        <!-- Logo -->
+        <a
+          href="/"
+          aria-label="BOOKLY - Trang chủ"
+          class="flex h-9 w-[155px] shrink-0 items-center gap-3"
+        >
+          <img
+            src="assets/img/bookly-logo.png"
+            alt="BOOKLY"
+            class="h-9 w-auto object-contain"
+          />
+
+          <span class="font-body text-2xl font-semibold leading-9 text-ink">
+            BOOKLY
+          </span>
         </a>
 
         <!-- Menu navbar -->
-        <ul>
-          <li><a href="#hero">Trang chủ</a></li>
-          <li><a href="#features">Tính năng</a></li>
-          <li><a href="#statistics">Về BOOKLY</a></li>
-          <li><a href="#testimonials">Đánh giá</a></li>
-          <li><a href="#pricing">Gói thành viên</a></li>
-          <li><a href="#faq">Câu hỏi thường gặp</a></li>
+        <ul class="flex flex-1 items-center gap-8">
+          <li>
+            <a
+              href="#hero"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Trang chủ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#features"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Tính năng
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#statistics"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Về BOOKLY
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#testimonials"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Đánh giá
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#pricing"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Gói thành viên
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#faq"
+              class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
+            >
+              Câu hỏi thường gặp
+            </a>
+          </li>
         </ul>
 
         <!-- Register link -->
-        <a class="btn btn-primary" href="#pricing"> Đăng ký ngay </a>
+        <a
+          href="#pricing"
+          class="font-body flex h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700"
+        >
+          Đăng ký ngay
+        </a>
       </nav>
     </header>
 
@@ -45,24 +113,35 @@
       <section
         aria-labelledby="hero-title"
         id="hero"
-        class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
+        class="-mt-28 section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
       >
-        <!-- Cột trái  -->
+        <!-- Cột trái -->
         <div>
-          <h1 id="hero-title">Kho sách trong tầm tay, đọc mọi lúc mọi nơi</h1>
-          <p>
+          <h1
+            id="hero-title"
+            class="font-body text-4xl font-black leading-tight text-ink lg:text-6xl lg:leading-none"
+          >
+            Thế giới sách trong tầm tay
+          </h1>
+
+          <p
+            class="font-body mt-6 text-lg leading-7 text-muted lg:text-xl lg:leading-[30px]"
+          >
             Khám phá hàng nghìn ebook thuộc nhiều thể loại, đọc trực tuyến trên
             mọi thiết bị với một gói thành viên phù hợp.
           </p>
-          <a class="btn btn-primary" href="#pricing">
+
+          <a href="#pricing" class="btn btn-primary mt-10">
             Khám phá các gói thành viên
           </a>
         </div>
+
         <!-- Cột phải -->
-        <div>
+        <div class="flex items-center justify-center lg:justify-end">
           <img
-            src="images/hero-image.png"
+            src="assets/img/hero-image.png"
             alt="Đọc sách ebook trực tuyến trên BOOKLY"
+            class="w-full max-w-[532px] object-contain"
           />
         </div>
       </section>
