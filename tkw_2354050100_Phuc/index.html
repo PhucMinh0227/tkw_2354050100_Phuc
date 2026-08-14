@@ -54,7 +54,7 @@
 
           <li>
             <a
-              href="#features"
+              href="#tinh-nang"
               class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
             >
               Tính năng
@@ -72,7 +72,7 @@
 
           <li>
             <a
-              href="#testimonials"
+              href="#cam-nhan"
               class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
             >
               Đánh giá
@@ -81,7 +81,7 @@
 
           <li>
             <a
-              href="#pricing"
+              href="#bang-gia"
               class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
             >
               Gói thành viên
@@ -100,7 +100,7 @@
 
         <!-- Register link -->
         <a
-          href="#pricing"
+          href="#bang-gia"
           class="font-body flex h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700"
         >
           Đăng ký ngay
@@ -131,7 +131,7 @@
             mọi thiết bị với một gói thành viên phù hợp.
           </p>
 
-          <a href="#pricing" class="btn btn-primary mt-10">
+          <a href="#bang-gia" class="btn btn-primary mt-10">
             Khám phá các gói thành viên
           </a>
         </div>
@@ -353,7 +353,7 @@
       <!-- 6. TESTIMONIALS (cảm nhận/đánh giá) -->
       <section
         aria-labelledby="cam-nhan-title"
-        id="camnhan"
+        id="cam-nhan"
         class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
         <div class="text-center max-w-2xl mx-auto">
@@ -410,7 +410,7 @@
       <!-- 7. PRICING (bảng giá)-->
       <section
         aria-labelledby="bang-gia-title"
-        id="bangia"
+        id="bang-gia"
         class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
         <div class="text-center max-w-2xl mx-auto">
@@ -446,7 +446,9 @@
               <li class="flex items-center gap-2">Đọc không giới hạn</li>
               <li class="flex items-center gap-2">Lưu sách yêu thích</li>
             </ul>
-            <a class="btn btn-primary mt-auto"> Đăng ký gói Cơ Bản </a>
+            <a href="#goi-dang-ky" class="btn btn-primary mt-auto">
+              Đăng ký gói Cơ Bản
+            </a>
           </li>
 
           <!-- Gói Tiêu Chuẩn (Thẻ nổi bật) -->
@@ -470,7 +472,9 @@
                 Đồng bộ tiến độ đọc trên các thiết bị
               </li>
             </ul>
-            <a class="btn btn-primary mt-auto"> Đăng ký gói Tiêu Chuẩn </a>
+            <a href="#goi-dang-ky" class="btn btn-primary mt-auto">
+              Đăng ký gói Tiêu Chuẩn
+            </a>
           </li>
 
           <!-- Gói Premium -->
@@ -488,83 +492,245 @@
               <li class="flex items-center gap-2">Nội dung độc quyền</li>
               <li class="flex items-center gap-2">Ưu tiên truy cập sách mới</li>
             </ul>
-            <a class="btn btn-primary mt-auto"> Đăng ký gói Premium </a>
+            <a href="#goi-dang-ky" class="btn btn-primary mt-auto">
+              Đăng ký gói Premium
+            </a>
           </li>
         </ul>
       </section>
 
-      <!-- 8. FAQ (câu hỏi thường gặp)-->
-      <section aria-labelledby="faq-title" id="faq" class="section">
-        <h2 id="faq-title">Câu hỏi thường gặp</h2>
+      <!-- 8. FAQ (câu hỏi thường gặp) -->
+      <section
+        aria-labelledby="faq-title"
+        id="faq"
+        class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
+      >
+        <div class="grid gap-12 lg:grid-cols-[1fr_1.4fr]">
+          <!-- Cột trái (1fr): Tiêu đề & mô tả -->
+          <div>
+            <p
+              class="font-display text-xs font-semibold uppercase text-brand-600"
+            >
+              Giải đáp
+            </p>
+            <h2
+              id="faq-title"
+              class="mt-4 text-3xl font-extrabold sm:text-4xl text-ink"
+            >
+              Câu hỏi thường gặp
+            </h2>
+            <p class="mt-4 text-lg text-muted">
+              Bạn có thắc mắc về BOOKLY? Dưới đây là những câu hỏi phổ biến nhất
+              từ độc giả.
+            </p>
+          </div>
 
-        <details>
-          <summary>BOOKLY là gì?</summary>
-          <p>
-            BOOKLY là nền tảng đọc sách ebook trực tuyến, cho phép người dùng
-            khám phá và đọc hàng nghìn đầu sách thông qua các gói thành viên.
-          </p>
-        </details>
+          <!-- Cột phải (1.4fr): Danh sách accordion -->
+          <div class="space-y-4">
+            <details
+              class="group rounded-xl border border-line p-5 [&_summary::-webkit-details-marker]:hidden"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between font-semibold text-ink"
+              >
+                <span>BOOKLY là gì?</span>
+                <span class="transition group-open:rotate-180 text-muted"
+                  >▼</span
+                >
+              </summary>
+              <p class="mt-4 text-muted leading-relaxed">
+                BOOKLY là nền tảng đọc sách ebook trực tuyến, cho phép người
+                dùng khám phá và đọc hàng nghìn đầu sách thông qua các gói thành
+                viên.
+              </p>
+            </details>
 
-        <details>
-          <summary>Tôi có thể đọc sách trên thiết bị nào?</summary>
-          <p>
-            Bạn có thể đọc sách trên máy tính, máy tính bảng và điện thoại có
-            kết nối Internet.
-          </p>
-        </details>
+            <details
+              class="group rounded-xl border border-line p-5 [&_summary::-webkit-details-marker]:hidden"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between font-semibold text-ink"
+              >
+                <span>Tôi có thể đọc sách trên thiết bị nào?</span>
+                <span class="transition group-open:rotate-180 text-muted"
+                  >▼</span
+                >
+              </summary>
+              <p class="mt-4 text-muted leading-relaxed">
+                Bạn có thể đọc sách trên máy tính, máy tính bảng và điện thoại
+                thông minh có kết nối Internet.
+              </p>
+            </details>
 
-        <details>
-          <summary>Tôi có thể hủy gói thành viên không?</summary>
-          <p>
-            Có. Bạn có thể hủy gia hạn gói thành viên bất cứ lúc nào trong phần
-            quản lý tài khoản.
-          </p>
-        </details>
+            <details
+              class="group rounded-xl border border-line p-5 [&_summary::-webkit-details-marker]:hidden"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between font-semibold text-ink"
+              >
+                <span>Tôi có thể hủy gói thành viên không?</span>
+                <span class="transition group-open:rotate-180 text-muted"
+                  >▼</span
+                >
+              </summary>
+              <p class="mt-4 text-muted leading-relaxed">
+                Có. Bạn có thể hủy gia hạn gói thành viên bất cứ lúc nào trong
+                phần quản lý tài khoản.
+              </p>
+            </details>
 
-        <details>
-          <summary>Tôi có thể đăng ký nhiều gói cùng lúc không?</summary>
-          <p>Mỗi tài khoản chỉ sử dụng một gói thành viên tại một thời điểm.</p>
-        </details>
+            <details
+              class="group rounded-xl border border-line p-5 [&_summary::-webkit-details-marker]:hidden"
+            >
+              <summary
+                class="flex cursor-pointer items-center justify-between font-semibold text-ink"
+              >
+                <span>Tôi có thể đăng ký nhiều gói cùng lúc không?</span>
+                <span class="transition group-open:rotate-180 text-muted"
+                  >▼</span
+                >
+              </summary>
+              <p class="mt-4 text-muted leading-relaxed">
+                Mỗi tài khoản chỉ sử dụng một gói thành viên tại một thời điểm.
+              </p>
+            </details>
+          </div>
+        </div>
       </section>
 
-      <!-- 9. CTA -->
+      <!-- 9. CTA (Khuyến khích đăng ký) -->
       <section
         aria-labelledby="subscription-title"
         id="subscription"
-        class="section"
+        class="border-t border-line bg-surface-alt"
       >
-        <h2 id="subscription-title">Bắt đầu hành trình đọc sách của bạn</h2>
-        <p>
-          Khám phá kho ebook phong phú và tìm những cuốn sách phù hợp với sở
-          thích của bạn ngay hôm nay.
-        </p>
-        <a href="#pricing"> Chọn gói thành viên </a>
+        <div class="mx-auto max-w-6xl px-5 py-20 lg:py-28 text-center">
+          <h2
+            id="subscription-title"
+            class="text-3xl font-extrabold sm:text-4xl text-ink"
+          >
+            Bắt đầu hành trình đọc sách của bạn
+          </h2>
+          <p class="mt-4 max-w-2xl mx-auto text-lg text-muted">
+            Khám phá kho ebook phong phú và tìm những cuốn sách phù hợp với sở
+            thích của bạn ngay hôm nay.
+          </p>
+          <a href="#bang-gia" class="btn btn-primary mt-8 inline-block">
+            Chọn gói thành viên
+          </a>
+        </div>
       </section>
     </main>
 
-    <!-- 10. FOOTER -->
-    <footer>
-      <section aria-labelledby="contact-title" class="section">
-        <h2 id="contact-title">Liên hệ với BOOKLY</h2>
-        <address>
-          <p>272 Nguyễn Ảnh Thủ, Hóc Môn, Thành phố Hồ Chí Minh</p>
-          <p><a href="tel:+84123456789"> +84 123 456 789 </a></p>
-          <p><a href="mailto:contact@bookly.vn"> contact@bookly.vn </a></p>
-        </address>
-      </section>
+    <!-- 10. FOOTER (Bốn cột)-->
+    <footer
+      class="border-t border-line bg-surface pt-16 pb-12 text-sm text-muted"
+    >
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Cột 1: Logo & Mô tả ngắn -->
+          <div>
+            <a
+              href="/"
+              aria-label="BOOKLY - Trang chủ"
+              class="flex items-center gap-3"
+            >
+              <img
+                src="assets/img/bookly-logo.png"
+                alt="BOOKLY"
+                class="h-8 w-auto object-contain"
+              />
+              <span class="font-body text-xl font-semibold text-ink"
+                >BOOKLY</span
+              >
+            </a>
+            <p class="mt-4 text-muted leading-relaxed">
+              Nền tảng đọc sách ebook trực tuyến hàng đầu, mang tri thức đến mọi
+              nơi trong tầm tay bạn.
+            </p>
+          </div>
 
-      <nav aria-label="Điều hướng chân trang">
-        <h2>Liên kết nhanh</h2>
-        <ul>
-          <li><a href="#hero"> Trang chủ </a></li>
-          <li><a href="#features"> Tính năng </a></li>
-          <li><a href="#pricing"> Gói thành viên </a></li>
-          <li><a href="#faq"> Câu hỏi thường gặp </a></li>
-          <li><a href="#subscription"> Đăng ký </a></li>
-        </ul>
-      </nav>
+          <!-- Cột 2: Nhóm liên kết sản phẩm -->
+          <nav aria-labelledby="footer-product-title">
+            <h3 id="footer-product-title" class="font-bold text-ink">
+              Sản phẩm
+            </h3>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a href="#hero" class="transition hover:text-brand-600"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="#tinh-nang" class="transition hover:text-brand-600"
+                  >Tính năng</a
+                >
+              </li>
+              <li>
+                <a href="#bang-gia" class="transition hover:text-brand-600"
+                  >Gói thành viên</a
+                >
+              </li>
+              <li>
+                <a href="#statistics" class="transition hover:text-brand-600"
+                  >Về BOOKLY</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-      <p>&copy; 2026 BOOKLY. Bản quyền thuộc về BOOKLY.</p>
+          <!-- Cột 3: Nhóm liên kết hỗ trợ -->
+          <nav aria-labelledby="footer-support-title">
+            <h3 id="footer-support-title" class="font-bold text-ink">Hỗ trợ</h3>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a href="#faq" class="transition hover:text-brand-600"
+                  >Câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a href="#cam-nhan" class="transition hover:text-brand-600"
+                  >Đánh giá độc giả</a
+                >
+              </li>
+              <li>
+                <a href="#goi-dang-ky" class="transition hover:text-brand-600"
+                  >Đăng ký ngay</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Cột 4: Địa chỉ liên hệ -->
+          <section aria-labelledby="contact-title">
+            <h3 id="contact-title" class="font-bold text-ink">Liên hệ</h3>
+            <address class="mt-4 space-y-2.5 not-italic">
+              <p>272 Nguyễn Ảnh Thủ, Hóc Môn, TP. Hồ Chí Minh</p>
+              <p>
+                <a
+                  href="tel:+84123456789"
+                  class="transition hover:text-brand-600"
+                  >+84 123 456 789</a
+                >
+              </p>
+              <p>
+                <a
+                  href="mailto:contact@bookly.vn"
+                  class="transition hover:text-brand-600"
+                  >contact@bookly.vn</a
+                >
+              </p>
+            </address>
+          </section>
+        </div>
+
+        <!-- Dòng Copyright -->
+        <div
+          class="mt-12 border-t border-line pt-6 text-center text-xs text-muted"
+        >
+          <p>&copy; 2026 BOOKLY. Bản quyền thuộc về BOOKLY.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
