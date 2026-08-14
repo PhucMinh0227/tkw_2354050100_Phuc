@@ -352,13 +352,13 @@
 
       <!-- 6. TESTIMONIALS (cảm nhận/đánh giá) -->
       <section
-        aria-labelledby="testimonials-title"
-        id="testimonials"
+        aria-labelledby="cam-nhan-title"
+        id="camnhan"
         class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
         <div class="text-center max-w-2xl mx-auto">
           <h2
-            id="testimonials-title"
+            id="cam-nhan-title"
             class="text-3xl font-extrabold sm:text-4xl text-ink"
           >
             Độc giả nói gì về BOOKLY
@@ -408,49 +408,87 @@
       </section>
 
       <!-- 7. PRICING (bảng giá)-->
-      <section aria-labelledby="pricing-title" id="pricing" class="section">
-        <h2 id="pricing-title">Chọn gói thành viên phù hợp</h2>
+      <section
+        aria-labelledby="bang-gia-title"
+        id="bangia"
+        class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
+      >
+        <div class="text-center max-w-2xl mx-auto">
+          <p
+            class="font-display text-xs font-semibold uppercase text-brand-600"
+          >
+            Gói dịch vụ
+          </p>
+          <h2
+            id="bang-gia-title"
+            class="mt-4 text-3xl font-extrabold sm:text-4xl text-ink"
+          >
+            Chọn gói thành viên phù hợp
+          </h2>
+          <p class="mt-4 text-lg text-muted">
+            Đăng ký một gói thành viên và bắt đầu khám phá thư viện ebook của
+            BOOKLY ngay hôm nay.
+          </p>
+        </div>
 
-        <p>
-          Đăng ký một gói thành viên và bắt đầu khám phá thư viện ebook của
-          BOOKLY.
-        </p>
-
-        <ul>
-          <li>
-            <h3>Gói Cơ Bản</h3>
-            <p>49.000 VNĐ / tháng</p>
-            <ul>
-              <li>Truy cập thư viện ebook cơ bản</li>
-              <li>Đọc không giới hạn</li>
-              <li>Lưu sách yêu thích</li>
+        <!-- Danh sách bảng giá -->
+        <!-- Gói cơ bản -->
+        <ul class="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
+          <li class="card flex h-full flex-col">
+            <h3 class="text-xl font-bold text-ink">Gói Cơ Bản</h3>
+            <p class="mt-4 text-3xl font-extrabold text-brand-600">
+              49.000 VNĐ/tháng
+            </p>
+            <ul class="mt-6 mb-6 flex-1 space-y-3 text-muted">
+              <li class="flex items-center gap-2">
+                Truy cập thư viện ebook cơ bản
+              </li>
+              <li class="flex items-center gap-2">Đọc không giới hạn</li>
+              <li class="flex items-center gap-2">Lưu sách yêu thích</li>
             </ul>
-            <a href="#subscription"> Đăng ký gói Cơ Bản </a>
+            <a class="btn btn-primary mt-auto"> Đăng ký gói Cơ Bản </a>
           </li>
 
-          <li>
-            <h3>Gói Tiêu Chuẩn</h3>
-            <p>99.000 VNĐ / tháng</p>
-            <ul>
-              <li>Truy cập toàn bộ thư viện ebook</li>
-              <li>Đọc không giới hạn</li>
-              <li>Đề xuất sách cá nhân hóa</li>
-              <li>Đồng bộ tiến độ đọc trên các thiết bị</li>
+          <!-- Gói Tiêu Chuẩn (Thẻ nổi bật) -->
+          <li class="card relative flex h-full flex-col ring-2 ring-brand-600">
+            <span
+              class="badge absolute -top-3 left-6 rounded-full bg-brand-600 px-3 py-1 text-xs font-semibold text-white"
+            >
+              Được chọn nhiều nhất
+            </span>
+            <h3 class="text-xl font-bold text-ink">Gói Tiêu Chuẩn</h3>
+            <p class="mt-4 text-3xl font-extrabold text-brand-600">
+              99.000 VNĐ/tháng
+            </p>
+            <ul class="mt-6 mb-6 flex-1 space-y-3 text-muted">
+              <li class="flex items-center gap-2">
+                Truy cập toàn bộ thư viện ebook
+              </li>
+              <li class="flex items-center gap-2">Đọc không giới hạn</li>
+              <li class="flex items-center gap-2">Đề xuất sách cá nhân hóa</li>
+              <li class="flex items-center gap-2">
+                Đồng bộ tiến độ đọc trên các thiết bị
+              </li>
             </ul>
-            <a href="#subscription"> Đăng ký gói Tiêu Chuẩn </a>
+            <a class="btn btn-primary mt-auto"> Đăng ký gói Tiêu Chuẩn </a>
           </li>
 
-          <li>
-            <h3>Gói Premium</h3>
-            <p>149.000 VNĐ / tháng</p>
-            <ul>
-              <li>Truy cập toàn bộ thư viện ebook</li>
-              <li>Đọc không giới hạn</li>
-              <li>Đề xuất sách cá nhân hóa</li>
-              <li>Nội dung độc quyền</li>
-              <li>Ưu tiên truy cập sách mới</li>
+          <!-- Gói Premium -->
+          <li class="card flex h-full flex-col">
+            <h3 class="text-xl font-bold text-ink">Gói Premium</h3>
+            <p class="mt-4 text-3xl font-extrabold text-brand-600">
+              149.000 VNĐ/tháng
+            </p>
+            <ul class="mt-6 mb-6 flex-1 space-y-3 text-muted">
+              <li class="flex items-center gap-2">
+                Truy cập toàn bộ thư viện ebook
+              </li>
+              <li class="flex items-center gap-2">Đọc không giới hạn</li>
+              <li class="flex items-center gap-2">Đề xuất sách cá nhân hóa</li>
+              <li class="flex items-center gap-2">Nội dung độc quyền</li>
+              <li class="flex items-center gap-2">Ưu tiên truy cập sách mới</li>
             </ul>
-            <a href="#subscription"> Đăng ký gói Premium </a>
+            <a class="btn btn-primary mt-auto"> Đăng ký gói Premium </a>
           </li>
         </ul>
       </section>
