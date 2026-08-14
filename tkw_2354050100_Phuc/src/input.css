@@ -30,15 +30,38 @@
 }
 
 /* Component dùng chung */
-.section {
-  @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
-}
+@layer {
+  .section {
+    @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
+  }
 
-.btn {
-  @apply inline-flex items-center justify-center gap-2 rounded-pill
-    px-5 py-2.5 text-sm font-semibold transition-colors;
-}
+  .feature-name {
+    @apply mt-5 text-lg font-bold text-brand-600;
+  }
+  /* dòng chữ nhỏ in hoa nằm trên mỗi tiêu đề section */
+  .eyebrow {
+    @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
+  }
 
-.btn-primary {
-  @apply bg-brand-600 text-white hover:bg-brand-700;
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill
+    px-5 py-2.5 text-sm font-semibold transition-colors duration-150 
+    disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-ghost {
+    @apply border border-line text-ink hover:bg-surface;
+  }
+  .btn-lg {
+    @apply px-7 py-3.5 text-base;
+  }
+
+  .card {
+    @apply rounded-card border border-line bg-surface p-6;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-pill px-3 py-1 text-xs font-semibold;
+  }
 }

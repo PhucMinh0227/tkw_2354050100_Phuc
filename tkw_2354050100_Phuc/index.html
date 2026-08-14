@@ -19,7 +19,7 @@
       class="pointer-events-none fixed left-1/2 top-0 z-50 w-[1440px] max-w-none -translate-x-1/2 opacity-30 hidden"
     />
     <!-- 1. NAV BAR -->
-    <header class="bg-surface">
+    <header class="sticky top-0 z-50 bg-surface">
       <nav
         aria-label="Thanh điều hướng chính"
         class="mx-auto flex h-[85px] w-full max-w-[1280px] items-center gap-8 px-0 py-6"
@@ -177,41 +177,50 @@
       </section>
 
       <!-- 4. FEATURES (tính năng)-->
-      <section aria-labelledby="features-title" id="features" class="section">
-        <h2 id="features-title">Trải nghiệm đọc sách tiện lợi</h2>
-        <p>
-          BOOKLY mang đến trải nghiệm đọc ebook đơn giản, thuận tiện và phù hợp
-          với thói quen đọc sách hiện đại.
-        </p>
+      <section
+        aria-labelledby="features-title"
+        id="features"
+        class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
+      >
+        <div class="max-w-2xl">
+          <p
+            class="font-display text-xs font-semibold uppercase text-brand-600"
+          >
+            Tính năng
+          </p>
+          <h2
+            id="features-title"
+            class="mt-4 text-3xl font-extrabold sm:text-4xl"
+          >
+            Mang đến trải nghiệm đọc sách tiện lợi
+          </h2>
+          <p class="mt-4 text-lg text-muted">
+            BOOKLY mang đến trải nghiệm đọc ebook đơn giản, thuận tiện và phù
+            hợp với thói quen đọc sách hiện đại.
+          </p>
+        </div>
+
         <!-- Service list -->
-        <ul>
-          <li>
-            <h3>Kho sách phong phú</h3>
-            <p>
+        <ul class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="card">
+            <h3 class="feature-name">Kho sách phong phú</h3>
+            <p class="mt-2 text-muted">
               Khám phá hàng nghìn ebook thuộc nhiều thể loại như văn học, kinh
               doanh, kỹ năng và phát triển bản thân.
             </p>
           </li>
 
-          <li>
-            <h3>Đọc mọi lúc mọi nơi</h3>
-            <p>
-              Truy cập sách trên máy tính, máy tính bảng hoặc điện thoại và tiếp
-              tục đọc bất cứ lúc nào.
-            </p>
-          </li>
-
-          <li>
-            <h3>Đề xuất sách cá nhân hóa</h3>
-            <p>
+          <li class="card">
+            <h3 class="feature-name">Đề xuất sách cá nhân hóa</h3>
+            <p class="mt-2 text-muted">
               Nhận các đề xuất sách dựa trên thể loại và nội dung bạn thường
               quan tâm.
             </p>
           </li>
 
-          <li>
-            <h3>Lưu sách yêu thích</h3>
-            <p>
+          <li class="card">
+            <h3 class="feature-name">Lưu sách yêu thích</h3>
+            <p class="mt-2 text-muted">
               Lưu lại những cuốn sách yêu thích và xây dựng thư viện đọc sách cá
               nhân của riêng bạn.
             </p>
