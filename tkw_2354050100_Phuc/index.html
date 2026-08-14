@@ -299,72 +299,112 @@
       <section
         aria-labelledby="statistics-title"
         id="statistics"
-        class="section"
+        class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
-        <h2 id="statistics-title">BOOKLY trong những con số</h2>
+        <div class="text-center max-w-2xl mx-auto">
+          <h2
+            id="statistics-title"
+            class="text-3xl font-extrabold sm:text-4xl text-ink"
+          >
+            BOOKLY trong những con số
+          </h2>
+        </div>
 
-        <ul>
-          <li>
-            <strong>10.000+</strong>
-            <p>Ebook trong thư viện</p>
-          </li>
+        <dl
+          class="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4 divide-x divide-line"
+        >
+          <div class="flex flex-col items-center text-center px-4">
+            <!-- <dt> đứng trước <dd> để chuẩn ngữ nghĩa HTML, dùng order-2 để đảo vị trí hiển thị con số lên trước -->
+            <dt class="order-2 mt-2 text-sm text-muted">
+              Ebook trong thư viện
+            </dt>
+            <dd class="font-display text-4xl font-extrabold text-brand-600">
+              10.000+
+            </dd>
+          </div>
 
-          <li>
-            <strong>500+</strong>
-            <p>Tác giả và nhà xuất bản</p>
-          </li>
+          <div class="flex flex-col items-center text-center px-4">
+            <dt class="order-2 mt-2 text-sm text-muted">
+              Tác giả và nhà xuất bản
+            </dt>
+            <dd class="font-display text-4xl font-extrabold text-brand-600">
+              500+
+            </dd>
+          </div>
 
-          <li>
-            <strong>50.000+</strong>
-            <p>Độc giả đang sử dụng</p>
-          </li>
+          <div class="flex flex-col items-center text-center px-4">
+            <dt class="order-2 mt-2 text-sm text-muted">
+              Độc giả đang sử dụng
+            </dt>
+            <dd class="font-display text-4xl font-extrabold text-brand-600">
+              50.000+
+            </dd>
+          </div>
 
-          <li>
-            <strong>20+</strong>
-            <p>Thể loại sách</p>
-          </li>
-        </ul>
+          <div class="flex flex-col items-center text-center px-4">
+            <dt class="order-2 mt-2 text-sm text-muted">Thể loại sách</dt>
+            <dd class="font-display text-4xl font-extrabold text-brand-600">
+              20+
+            </dd>
+          </div>
+        </dl>
       </section>
 
-      <!-- 6. TESTIMONIALS (cảm nhận/đánh giá)-->
+      <!-- 6. TESTIMONIALS (cảm nhận/đánh giá) -->
       <section
         aria-labelledby="testimonials-title"
         id="testimonials"
-        class="section"
+        class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
-        <h2 id="testimonials-title">Độc giả nói gì về BOOKLY</h2>
+        <div class="text-center max-w-2xl mx-auto">
+          <h2
+            id="testimonials-title"
+            class="text-3xl font-extrabold sm:text-4xl text-ink"
+          >
+            Độc giả nói gì về BOOKLY
+          </h2>
+        </div>
 
-        <ul>
-          <li>
-            <blockquote>
-              BOOKLY giúp tôi đọc sách thuận tiện hơn rất nhiều. Tôi có thể đọc
-              ngay trên điện thoại khi có thời gian rảnh.
+        <div class="mt-14 grid gap-8 md:grid-cols-3">
+          <figure class="card flex flex-col justify-between">
+            <blockquote class="text-muted leading-relaxed">
+              "BOOKLY giúp tôi đọc sách thuận tiện hơn rất nhiều. Tôi có thể đọc
+              ngay trên điện thoại khi có thời gian rảnh."
             </blockquote>
-            <p>
-              <cite>Nguyễn Gia Hân</cite>
-            </p>
-          </li>
+            <figcaption class="mt-6 flex flex-col">
+              <span class="font-bold text-ink">Nguyễn Gia Hân</span>
+              <cite class="not-italic text-sm text-muted"
+                >Gia sư ưu tú năm 2025</cite
+              >
+            </figcaption>
+          </figure>
 
-          <li>
-            <blockquote>
-              Kho sách đa dạng và dễ tìm kiếm. Tôi đặc biệt thích tính năng đề
-              xuất sách.
+          <figure class="card flex flex-col justify-between">
+            <blockquote class="text-muted leading-relaxed">
+              "Kho sách đa dạng và dễ tìm kiếm. Tôi đặc biệt thích tính năng đề
+              xuất sách cá nhân hóa."
             </blockquote>
-            <p>
-              <cite>Nguyễn Ngọc Quý</cite>
-            </p>
-          </li>
+            <figcaption class="mt-6 flex flex-col">
+              <span class="font-bold text-ink">Nguyễn Ngọc Quý</span>
+              <cite class="not-italic text-sm text-muted"
+                >Nhà truyền cảm hứng cho giới trẻ</cite
+              >
+            </figcaption>
+          </figure>
 
-          <li>
-            <blockquote>
-              Gói thành viên phù hợp với nhu cầu của tôi. Tôi có thể đọc nhiều
-              sách mà không cần mua từng cuốn.
+          <figure class="card flex flex-col justify-between">
+            <blockquote class="text-muted leading-relaxed">
+              "Gói thành viên phù hợp với nhu cầu của tôi. Tôi có thể đọc nhiều
+              sách mà không cần mua từng cuốn."
             </blockquote>
-            <p>
-              <cite>Lê Hữu Phúc</cite>
-            </p>
-          </li>
-        </ul>
+            <figcaption class="mt-6 flex flex-col">
+              <span class="font-bold text-ink">Lê Hữu Phúc</span>
+              <cite class="not-italic text-sm text-muted"
+                >Độc giả năng suất của trang</cite
+              >
+            </figcaption>
+          </figure>
+        </div>
       </section>
 
       <!-- 7. PRICING (bảng giá)-->
