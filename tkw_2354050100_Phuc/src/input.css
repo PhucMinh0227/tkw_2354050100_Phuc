@@ -47,7 +47,7 @@ body {
     @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
   }
 
-  /* 2. Header & Footer */
+  /* 2. Header & Footer component */
   .site-header {
     @apply sticky top-0 z-50 bg-surface dark:bg-surface-dark border-b border-line dark:border-line-invert;
   }
@@ -55,7 +55,7 @@ body {
     @apply border-t border-line dark:border-line-invert bg-surface dark:bg-surface-dark  dark:text-ink-invert pt-16 pb-12;
   }
 
-  /* 3. UI Elements (Dùng lặp lại) */
+  /* 3. Component dùng lặp lại */
   .btn {
     @apply inline-flex items-center justify-center gap-2 rounded-pill px-5 py-2.5 text-sm font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-50;
   }
@@ -85,7 +85,7 @@ body {
     @apply mt-5 text-lg font-bold text-brand-600;
   }
 
-  /* 4. Form Elements (Dùng cho contact.html) */
+  /* 4. Form Components (Dùng cho contact.html) */
   .field-label {
     @apply mb-2 block text-sm font-semibold text-ink dark:text-ink-invert;
   }
