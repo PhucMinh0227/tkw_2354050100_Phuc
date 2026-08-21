@@ -48,9 +48,11 @@
     --color-brand-600: #00a380;
     --color-brand-700: #00826a;
     --color-ink: #12211d;
-    --color-muted: #5c6f69;
+    --color-ink-invert: #eaf2ee;
     --color-line: #dfe6e2;
+    --color-line-invert: #24403a;
     --color-surface: #ffffff;
+    --color-surface-dark: #0e1c19;
     --font-display: "Be Vietnam Pro", system-ui, sans-serif;
     --font-body: "Inter", system-ui, sans-serif;
     --radius-card: 0.875rem;
@@ -447,9 +449,6 @@
   .bg-brand-600 {
     background-color: var(--color-brand-600);
   }
-  .bg-surface {
-    background-color: var(--color-surface);
-  }
   .object-contain {
     object-fit: contain;
   }
@@ -574,12 +573,6 @@
   .text-brand-600 {
     color: var(--color-brand-600);
   }
-  .text-ink {
-    color: var(--color-ink);
-  }
-  .text-muted {
-    color: var(--color-muted);
-  }
   .text-white {
     color: var(--color-white);
   }
@@ -703,6 +696,50 @@
   }
 }
 @layer components {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    &:where(.dark, .dark *) {
+      background-color: var(--color-surface-dark);
+    }
+    &:where(.dark, .dark *) {
+      color: var(--color-ink-invert);
+    }
+  }
+  .hero {
+    background-color: var(--color-surface);
+    color: var(--color-ink);
+    &:where(.dark, .dark *) {
+      background-color: var(--color-surface-dark);
+    }
+    &:where(.dark, .dark *) {
+      color: var(--color-ink-invert);
+    }
+  }
+  .site-header {
+    background-color: var(--color-surface);
+    &:where(.dark, .dark *) {
+      background-color: var(--color-surface-dark);
+    }
+  }
+  .site-footer {
+    border-color: var(--color-line);
+    background-color: var(--color-surface);
+    &:where(.dark, .dark *) {
+      border-color: var(--color-line-invert);
+    }
+    &:where(.dark, .dark *) {
+      background-color: var(--color-surface-dark);
+    }
+    &:where(.dark, .dark *) {
+      color: var(--color-ink-invert);
+    }
+  }
   .section {
     margin-inline: auto;
     width: 100%;
@@ -789,6 +826,15 @@
     border-color: var(--color-line);
     background-color: var(--color-surface);
     padding: calc(var(--spacing) * 6);
+    &:where(.dark, .dark *) {
+      border-color: var(--color-line-invert);
+    }
+    &:where(.dark, .dark *) {
+      background-color: var(--color-surface-dark);
+    }
+    &:where(.dark, .dark *) {
+      color: var(--color-ink-invert);
+    }
   }
   .badge {
     display: inline-flex;
@@ -906,11 +952,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-tracking {
+@property --tw-duration {
   syntax: "*";
   inherits: false;
 }
-@property --tw-duration {
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -939,8 +985,8 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-tracking: initial;
       --tw-duration: initial;
+      --tw-tracking: initial;
     }
   }
 }

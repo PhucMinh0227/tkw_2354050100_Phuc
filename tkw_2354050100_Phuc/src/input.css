@@ -9,28 +9,57 @@
   --color-brand-900: #005446;
 
   /* Màu nhấn: Cinnabar #ff3838 */
-
   --color-accent-300: #ff9d9d;
   --color-accent-400: #ff6464;
   --color-accent-500: #ff3838;
 
   /* Màu chữ: */
-
+  /* Thêm Token cho chế độ Sáng/Tối */
   --color-ink: #12211d;
-  --color-muted: #5c6f69;
+  --color-ink-invert: #eaf2ee; /* Chữ trên nền tối */
+
   --color-line: #dfe6e2;
+  --color-line-invert: #24403a; /* Viền trên nền tối */
+
   --color-surface: #ffffff;
+  --color-surface-dark: #0e1c19; /* Nền tối */
+
+  /* Font chữ */
   --font-display: "Be Vietnam Pro", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
   /* Bo góc: */
-
   --radius-card: 0.875rem;
   --radius-pill: 999px;
 }
 
 /* Component dùng chung */
 @layer components {
+  body {
+    @apply bg-surface text-ink
+    dark:bg-surface-dark
+    dark:text-ink-invert
+    transition-colors duration-300;
+  }
+
+  .hero {
+    @apply bg-surface text-ink
+    dark:bg-surface-dark
+    dark:text-ink-invert;
+  }
+
+  .site-header {
+    @apply bg-surface
+    dark:bg-surface-dark;
+  }
+
+  .site-footer {
+    @apply border-line bg-surface
+    dark:border-line-invert
+    dark:bg-surface-dark
+    dark:text-ink-invert;
+  }
+
   .section {
     @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
   }
@@ -62,7 +91,8 @@
   }
 
   .card {
-    @apply rounded-card border border-line bg-surface p-6;
+    @apply rounded-card border border-line bg-surface p-6 
+    dark:border-line-invert dark:bg-surface-dark dark:text-ink-invert;
   }
 
   .badge {
