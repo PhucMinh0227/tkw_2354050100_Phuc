@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="vi" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - BOOKLY</title>
+    <meta
+      name="description"
+      content="Thông tin liên hệ với BOOKLY và Form đăng ký"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+
+  <body class="body">
+    <!-- NAV BAR -->
+    <header class="site-header sticky top-0 z-50">
+      <nav
+        aria-label="Thanh điều hướng chính"
+        class="mx-auto flex h-[72px] w-full max-w-[1280px] items-center justify-between gap-4 px-5 py-4 lg:h-[85px] lg:gap-8 lg:px-5 lg:py-6"
+      >
+        <!-- Logo -->
+        <a
+          href="/"
+          aria-label="BOOKLY - Trang chủ"
+          class="flex h-9 w-[155px] shrink-0 items-center gap-3"
+        >
+          <img
+            src="assets/img/bookly-logo.png"
+            alt="BOOKLY"
+            class="h-9 w-auto object-contain"
+          />
+
+          <span class="font-body text-2xl font-semibold leading-9">
+            BOOKLY
+          </span>
+        </a>
+
+        <!-- Menu navbar -->
+        <ul class="hidden flex-1 items-center gap-8 lg:flex">
+          <li>
+            <a
+              href="#hero"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Trang chủ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#tinh-nang"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Tính năng
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#so-lieu"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Về BOOKLY
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#cam-nhan"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Đánh giá
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="pricing.html"
+              class="font-body text-base font-medium leading-6transition-colors hover:text-brand-600"
+            >
+              Gói thành viên
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="contact.html"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Liên hệ
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#faq"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Câu hỏi thường gặp
+            </a>
+          </li>
+        </ul>
+
+        <!-- Register link -->
+        <a
+          href="pricing.html"
+          class="hidden font-body h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700 lg:flex"
+        >
+          Đăng ký ngay
+        </a>
+
+        <!-- Hamburger button -->
+        <button
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line lg:hidden"
+          aria-label="Mở menu"
+        >
+          <span aria-hidden="true" class="text-xl">☰</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="max-w-2xl mx-auto">
+          <h1 class="text-3xl font-extrabold mb-8 text-center">
+            Liên hệ với BOOKLY
+          </h1>
+
+          <form class="card space-y-6" action="#" method="POST">
+            <!-- 1. Họ và tên (Text) -->
+            <div>
+              <label class="field-label" for="ho-ten"> Họ và tên </label>
+
+              <input
+                class="field-input"
+                id="ho-ten"
+                name="hoTen"
+                type="text"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <!-- 2. Số điện thoại (Tel) - CHUẨN ACCESSIBILITY TỪ PDF -->
+            <div>
+              <label class="field-label" for="dien-thoai">
+                Số điện thoại
+                <span class="text-red-600" aria-hidden="true">*</span>
+              </label>
+
+              <input
+                class="field-input"
+                id="dien-thoai"
+                name="dienThoai"
+                type="tel"
+                required
+                pattern="0[0-9]{9}"
+                autocomplete="tel"
+                inputmode="numeric"
+                aria-describedby="dien-thoai-hint dien-thoai-error"
+              />
+
+              <p class="mt-1.5 text-xs text-muted" id="dien-thoai-hint">
+                Chúng tôi gọi qua số này, không nhắn tin quảng cáo.
+              </p>
+
+              <p
+                class="mt-1.5 text-xs text-red-600"
+                id="dien-thoai-error"
+                role="alert"
+              ></p>
+            </div>
+
+            <!-- 3. Email (Email) -->
+            <div>
+              <label class="field-label" for="email"> Email </label>
+
+              <input
+                class="field-input"
+                id="email"
+                name="email"
+                type="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <!-- 4. Vấn đề cần hỗ trợ (Select) -->
+            <div>
+              <label class="field-label" for="van-de">Vấn đề cần hỗ trợ</label>
+              <select class="field-input" id="van-de" name="vanDe">
+                <option value="tu-van">Tư vấn gói thành viên</option>
+                <option value="ky-thuat">Hỗ trợ kỹ thuật</option>
+                <option value="hop-tac">Tài khoản</option>
+                <option value="hop-tac">Thanh toán</option>
+                <option value="hop-tac">Gói thành viên</option>
+              </select>
+            </div>
+
+            <!-- 5. Nội dung (Textarea) -->
+            <div>
+              <label class="field-label" for="noi-dung"> Nội dung </label>
+
+              <textarea
+                class="field-input min-h-40 resize-y"
+                id="noi-dung"
+                name="noiDung"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+
+            <!-- 6. Đồng ý điều khoản (Checkbox) -->
+            <label class="flex items-start gap-3 text-sm">
+              <input
+                id="dong-y"
+                name="dongY"
+                type="checkbox"
+                required
+                class="mt-1 size-4 accent-brand-600"
+              />
+
+              <span>
+                Tôi đồng ý để BOOKLY sử dụng thông tin này để phản hồi.
+              </span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Gửi liên hệ</button>
+
+            <p class="mt-4 text-sm text-center text-brand-600 font-medium">
+              Sau khi gửi, chúng tôi sẽ phản hồi bạn qua Email trong vòng 24h
+              làm việc.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 10. FOOTER (Bốn cột)-->
+    <footer
+      class="site-footer border-t border-line pt-16 pb-12 text-sm text-muted"
+    >
+      <div class="mx-auto max-w-6xl px-5">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Cột 1: Logo & Mô tả ngắn -->
+          <div>
+            <a
+              href="#hero"
+              aria-label="BOOKLY - Trang chủ"
+              class="flex items-center gap-3"
+            >
+              <img
+                src="assets/img/bookly-logo.png"
+                alt="BOOKLY"
+                class="h-8 w-auto object-contain"
+              />
+              <span class="font-body text-xl font-semibold">BOOKLY</span>
+            </a>
+            <p class="mt-4 text-muted leading-relaxed">
+              Nền tảng đọc sách ebook trực tuyến hàng đầu, mang tri thức đến mọi
+              nơi trong tầm tay bạn.
+            </p>
+          </div>
+
+          <!-- Cột 2: Nhóm liên kết sản phẩm -->
+          <nav aria-labelledby="footer-product-title">
+            <h3 id="footer-product-title" class="font-bold">Sản phẩm</h3>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a href="#hero" class="transition hover:text-brand-600"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="#tinh-nang" class="transition hover:text-brand-600"
+                  >Tính năng</a
+                >
+              </li>
+              <li>
+                <a href="#bang-gia" class="transition hover:text-brand-600"
+                  >Gói thành viên</a
+                >
+              </li>
+              <li>
+                <a href="#so-lieu" class="transition hover:text-brand-600"
+                  >Về BOOKLY</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Cột 3: Nhóm liên kết hỗ trợ -->
+          <nav aria-labelledby="footer-support-title">
+            <h3 id="footer-support-title" class="font-bold">Hỗ trợ</h3>
+            <ul class="mt-4 space-y-2.5">
+              <li>
+                <a href="#faq" class="transition hover:text-brand-600"
+                  >Câu hỏi thường gặp</a
+                >
+              </li>
+              <li>
+                <a href="#cam-nhan" class="transition hover:text-brand-600"
+                  >Đánh giá độc giả</a
+                >
+              </li>
+              <li>
+                <a href="#goi-dang-ky" class="transition hover:text-brand-600"
+                  >Đăng ký ngay</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Cột 4: Địa chỉ liên hệ -->
+          <section aria-labelledby="lien-he-title">
+            <h3 id="lien-he-title" class="font-bold">Liên hệ</h3>
+            <address class="mt-4 space-y-2.5 not-italic">
+              <p>272 Nguyễn Ảnh Thủ, Hóc Môn, TP. Hồ Chí Minh</p>
+              <p>
+                <a
+                  href="tel:+84123456789"
+                  class="transition hover:text-brand-600"
+                  >+84 123 456 789</a
+                >
+              </p>
+              <p>
+                <a
+                  href="mailto:contact@bookly.vn"
+                  class="transition hover:text-brand-600"
+                  >contact@bookly.vn</a
+                >
+              </p>
+            </address>
+          </section>
+        </div>
+
+        <!-- Dòng Copyright -->
+        <div
+          class="mt-12 border-t border-line pt-6 text-center text-xs text-muted"
+        >
+          <p>&copy; 2026 BOOKLY. Bản quyền thuộc về BOOKLY.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="vi">
+<html lang="vi" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,7 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
 
-  <body class="body">
-    <!-- Ảnh Figma dùng để đối chiếu -->
-    <img
-      src="assets/img/Cover.png"
-      alt=""
-      class="pointer-events-none fixed left-1/2 top-0 z-50 w-[1440px] max-w-none -translate-x-1/2 opacity-30 hidden"
-    />
+  <body class="dark:bg-surface-dark dark:text-ink-invert">
     <!-- 1. NAV BAR -->
     <header class="site-header sticky top-0 z-50">
       <nav
@@ -81,10 +75,19 @@
 
           <li>
             <a
-              href="#bang-gia"
+              href="pricing.html"
               class="font-body text-base font-medium leading-6transition-colors hover:text-brand-600"
             >
               Gói thành viên
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="contact.html"
+              class="font-body text-base font-medium leading-6 transition-colors hover:text-brand-600"
+            >
+              Liên hệ
             </a>
           </li>
 
@@ -100,7 +103,7 @@
 
         <!-- Register link -->
         <a
-          href="#bang-gia"
+          href="pricing.html"
           class="hidden font-body h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700 lg:flex"
         >
           Đăng ký ngay
@@ -122,7 +125,7 @@
       <section
         aria-labelledby="hero-title"
         id="hero"
-        class="hero section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
+        class="section bg-surface dark:bg-surface-dark text-ink dark:text-ink-invert grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
       >
         <!-- Cột trái -->
         <div>

@@ -33,69 +33,68 @@
   --radius-pill: 999px;
 }
 
-/* Component dùng chung */
-@layer components {
-  body {
-    @apply bg-surface text-ink
+body {
+  @apply bg-surface text-ink
     dark:bg-surface-dark
     dark:text-ink-invert
     transition-colors duration-300;
-  }
+}
 
-  .hero {
-    @apply bg-surface text-ink
-    dark:bg-surface-dark
-    dark:text-ink-invert;
-  }
-
-  .site-header {
-    @apply bg-surface
-    dark:bg-surface-dark;
-  }
-
-  .site-footer {
-    @apply border-line bg-surface
-    dark:border-line-invert
-    dark:bg-surface-dark
-    dark:text-ink-invert;
-  }
-
+/* Component dùng chung */
+@layer components {
+  /* 1. Layout & Wrapper (Dùng chung toàn bộ trang) */
   .section {
     @apply mx-auto w-full max-w-6xl px-5 py-20 lg:py-28;
   }
 
-  .feature-name {
-    @apply mt-5 text-lg font-bold text-brand-600;
+  /* 2. Header & Footer */
+  .site-header {
+    @apply sticky top-0 z-50 bg-surface dark:bg-surface-dark border-b border-line dark:border-line-invert;
+  }
+  .site-footer {
+    @apply border-t border-line dark:border-line-invert bg-surface dark:bg-surface-dark  dark:text-ink-invert pt-16 pb-12;
+  }
+
+  /* 3. UI Elements (Dùng lặp lại) */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-pill px-5 py-2.5 text-sm font-semibold transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply bg-brand-600 text-white hover:bg-brand-700;
+  }
+  .btn-ghost {
+    @apply border border-line dark:border-line-invert text-ink dark:text-ink-invert hover:bg-surface dark:hover:bg-surface-dark;
+  }
+  .btn-lg {
+    @apply px-7 py-3.5 text-base;
+  }
+
+  .card {
+    @apply rounded-card border border-line bg-surface p-6 dark:border-line-invert dark:bg-surface-dark dark:text-ink-invert;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1.5 rounded-pill px-3 py-1 text-xs font-semibold;
   }
 
   .eyebrow {
     @apply font-display text-xs font-semibold uppercase tracking-[0.18em] text-brand-600;
   }
 
-  .btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-pill
-      px-5 py-2.5 text-sm font-semibold transition-colors duration-150
-      disabled:cursor-not-allowed disabled:opacity-50;
+  .feature-name {
+    @apply mt-5 text-lg font-bold text-brand-600;
   }
 
-  .btn-primary {
-    @apply bg-brand-600 text-white hover:bg-brand-700;
+  /* 4. Form Elements (Dùng cho contact.html) */
+  .field-label {
+    @apply mb-2 block text-sm font-semibold text-ink dark:text-ink-invert;
   }
-
-  .btn-ghost {
-    @apply border border-line text-ink hover:bg-surface;
-  }
-
-  .btn-lg {
-    @apply px-7 py-3.5 text-base;
-  }
-
-  .card {
-    @apply rounded-card border border-line bg-surface p-6 
+  .field-input {
+    @apply w-full rounded-card border border-line bg-surface px-4 py-3 text-ink outline-none transition
+    focus:border-brand-600 focus:ring-2 focus:ring-brand-600/20
     dark:border-line-invert dark:bg-surface-dark dark:text-ink-invert;
   }
-
-  .badge {
-    @apply inline-flex items-center gap-1.5 rounded-pill px-3 py-1 text-xs font-semibold;
+  .field-error {
+    @apply mt-1.5 text-xs text-red-600 empty:hidden;
   }
 }
