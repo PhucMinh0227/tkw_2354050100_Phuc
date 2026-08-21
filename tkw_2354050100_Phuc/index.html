@@ -22,7 +22,7 @@
     <header class="sticky top-0 z-50 bg-surface">
       <nav
         aria-label="Thanh điều hướng chính"
-        class="mx-auto flex h-[85px] w-full max-w-[1280px] items-center gap-8 px-0 py-6"
+        class="mx-auto flex h-[72px] w-full max-w-[1280px] items-center justify-between gap-4 px-5 py-4 lg:h-[85px] lg:gap-8 lg:px-5 lg:py-6"
       >
         <!-- Logo -->
         <a
@@ -42,7 +42,7 @@
         </a>
 
         <!-- Menu navbar -->
-        <ul class="flex flex-1 items-center gap-8">
+        <ul class="hidden flex-1 items-center gap-8 lg:flex">
           <li>
             <a
               href="#hero"
@@ -63,7 +63,7 @@
 
           <li>
             <a
-              href="#statistics"
+              href="#so-lieu"
               class="font-body text-base font-medium leading-6 text-ink transition-colors hover:text-brand-600"
             >
               Về BOOKLY
@@ -101,10 +101,19 @@
         <!-- Register link -->
         <a
           href="#bang-gia"
-          class="font-body flex h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700"
+          class="hidden font-body h-[37px] shrink-0 items-center justify-center rounded-lg bg-brand-600 px-3 text-sm font-medium leading-[21px] text-white transition-colors hover:bg-brand-700 lg:flex"
         >
           Đăng ký ngay
         </a>
+
+        <!-- Hamburger button -->
+        <button
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line text-ink lg:hidden"
+          aria-label="Mở menu"
+        >
+          <span aria-hidden="true" class="text-xl">☰</span>
+        </button>
       </nav>
     </header>
 
@@ -113,13 +122,13 @@
       <section
         aria-labelledby="hero-title"
         id="hero"
-        class="-mt-28 section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
+        class="section grid items-center gap-14 lg:grid-cols-2 lg:gap-16"
       >
         <!-- Cột trái -->
         <div>
           <h1
             id="hero-title"
-            class="font-body text-4xl font-black leading-tight text-ink lg:text-6xl lg:leading-none"
+            class="font-body text-4xl font-black leading-tight text-ink sm:text-5xl lg:text-6xl lg:leading-none"
           >
             Thế giới sách trong tầm tay
           </h1>
@@ -148,13 +157,13 @@
 
       <!-- 3. CUSTOMER LOGOS (logo khách hàng)-->
       <section
-        aria-labelledby="doitac-title"
-        id="doitac"
+        aria-labelledby="doi-tac-title"
+        id="doi-tac"
         class="border-y border-line bg-surface-alt"
       >
         <div class="mx-auto max-w-6xl px-5 py-12">
           <h2
-            id="doitac-title"
+            id="doi-tac-title"
             class="text-center text-sm font-medium text-muted"
           >
             Được tin dùng bởi các tổ chức
@@ -227,7 +236,7 @@
           </li>
 
           <li class="card">
-            <h3 class="feature-name">Kho sách phong phú</h3>
+            <h3 class="feature-name">Tìm kiếm thông minh</h3>
             <p class="mt-2 text-muted">
               Khám phá hàng nghìn ebook thuộc nhiều thể loại như văn học, kinh
               doanh, kỹ năng và phát triển bản thân.
@@ -235,7 +244,7 @@
           </li>
 
           <li class="card">
-            <h3 class="feature-name">Đề xuất sách cá nhân hóa</h3>
+            <h3 class="feature-name">Đọc ngoại tuyến</h3>
             <p class="mt-2 text-muted">
               Nhận các đề xuất sách dựa trên thể loại và nội dung bạn thường
               quan tâm.
@@ -243,7 +252,7 @@
           </li>
 
           <li class="card">
-            <h3 class="feature-name">Lưu sách yêu thích</h3>
+            <h3 class="feature-name">Đánh giá sách</h3>
             <p class="mt-2 text-muted">
               Lưu lại những cuốn sách yêu thích và xây dựng thư viện đọc sách cá
               nhân của riêng bạn.
@@ -255,13 +264,13 @@
       <!-- CÁCH HOẠT ĐỘNG -->
       <section
         id="cach-hoat-dong"
-        aria-labelledby="cach-title"
+        aria-labelledby="cach-hoat-dong-title"
         class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
         <div class="max-w-2xl">
           <p class="eyebrow">Cách hoạt động</p>
           <h2
-            id="cach-title"
+            id="cach-hoat-dong-title"
             class="mt-4 text-3xl font-extrabold sm:text-4xl text-ink"
           >
             Trải nghiệm đọc sách chỉ với 3 bước đơn giản
@@ -297,13 +306,13 @@
 
       <!-- 5. STATISTICS (số liệu thống kê) -->
       <section
-        aria-labelledby="statistics-title"
-        id="statistics"
+        aria-labelledby="so-lieu-title"
+        id="so-lieu"
         class="mx-auto w-full max-w-6xl px-5 py-20 lg:py-28"
       >
         <div class="text-center max-w-2xl mx-auto">
           <h2
-            id="statistics-title"
+            id="so-lieu-title"
             class="text-3xl font-extrabold sm:text-4xl text-ink"
           >
             BOOKLY trong những con số
@@ -600,13 +609,13 @@
 
       <!-- 9. CTA (Khuyến khích đăng ký) -->
       <section
-        aria-labelledby="subscription-title"
-        id="subscription"
+        aria-labelledby="dang-ky-title"
+        id="dang-ky"
         class="border-t border-line bg-surface-alt"
       >
         <div class="mx-auto max-w-6xl px-5 py-20 lg:py-28 text-center">
           <h2
-            id="subscription-title"
+            id="dang-ky-title"
             class="text-3xl font-extrabold sm:text-4xl text-ink"
           >
             Bắt đầu hành trình đọc sách của bạn
@@ -631,7 +640,7 @@
           <!-- Cột 1: Logo & Mô tả ngắn -->
           <div>
             <a
-              href="/"
+              href="#hero"
               aria-label="BOOKLY - Trang chủ"
               class="flex items-center gap-3"
             >
@@ -672,7 +681,7 @@
                 >
               </li>
               <li>
-                <a href="#statistics" class="transition hover:text-brand-600"
+                <a href="#so-lieu" class="transition hover:text-brand-600"
                   >Về BOOKLY</a
                 >
               </li>
@@ -702,8 +711,8 @@
           </nav>
 
           <!-- Cột 4: Địa chỉ liên hệ -->
-          <section aria-labelledby="contact-title">
-            <h3 id="contact-title" class="font-bold text-ink">Liên hệ</h3>
+          <section aria-labelledby="lien-he-title">
+            <h3 id="lien-he-title" class="font-bold text-ink">Liên hệ</h3>
             <address class="mt-4 space-y-2.5 not-italic">
               <p>272 Nguyễn Ảnh Thủ, Hóc Môn, TP. Hồ Chí Minh</p>
               <p>
